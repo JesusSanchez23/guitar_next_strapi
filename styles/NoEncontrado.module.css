@@ -1,0 +1,29 @@
+.contenedor{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+}
+
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    border: 2px solid var(--primary);
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    margin-top: 4rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.btn:hover{
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 1rem;
+}
+

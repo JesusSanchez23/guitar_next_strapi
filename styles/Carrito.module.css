@@ -1,0 +1,102 @@
+.contenido{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) { 
+     .contenido{
+         grid-template-columns: 3fr 2fr;
+     }
+}
+
+.carrito{
+    padding: 3rem 0;
+}
+
+.producto{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 4rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 3rem;
+    position: relative;
+}
+
+.producto:last-of-type{
+    border:none
+}
+
+.producto p{
+    margin: 0 0 1rem 0;
+}
+
+.nombre{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.precio{
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.cantidad{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.select{
+    all:unset;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    flex: 1;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.precio span{
+    font-size: 2.4rem;
+}
+
+.subtotal{
+    font-weight: 700;
+
+}
+
+.subtotal span{
+    font-size: 2.4rem;
+}
+
+.eliminar{
+    all:unset;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.eliminar:hover{
+    background-color: black;
+    color:var(--primary);
+    cursor: pointer;
+}
+
+.resumen{
+    padding: 1rem;
+    background-color: #F9FAFB;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px #e1e1e1;
+}
+
+.pagar span{
+    font-weight: 700;
+}
